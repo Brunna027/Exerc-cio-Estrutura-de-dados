@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 3</title>
+</head>
+
+<body>
+    <h1>Questão 03</h1>
+
+    <p>Faça um laço para imprimir todos os anos, do ano atual até o ano de seu nascimento.</p>
+
+    <script>
+        var esseAno = new Date().getFullYear();
+
+        var nascimento = prompt("Em qual ano você nasceu? ");
+
+        nascimento= parseInt(nascimento);
+
+        for(var ano = esseAno; ano >= nascimento; ano--){
+
+            document.write(ano + "<br>");
+        }
+
+    </script>
+
+</body>
+
+</html>

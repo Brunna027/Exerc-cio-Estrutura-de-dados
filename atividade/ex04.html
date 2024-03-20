@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 4</title>
+
+</head>
+
+<body>
+    <h1>Questão 04</h1>
+    <p>Peça ao usuário para digitar idades de 10 pessoas. Exiba quantas pessoas são maior de idade (18 anos) e quantas são menores.</p>
+    <script>
+
+        var maior = 0;
+        var menor = 0;
+
+        for(var i = 1; i <= 10;i++){
+            var idade = prompt("Escreva a idade " + i + ":");
+            idade = parseInt(idade);
+
+            if(idade >= 18){
+                maior++;
+            } else {
+                menor++;
+            }
+        }
+
+        document.write("Maior de idade: " + maior + "<br>");
+        document.write("Menor de idade: " + menor +"");
+    </script>
+</body>
+</html>
